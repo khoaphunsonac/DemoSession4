@@ -37,7 +37,7 @@ console.log("3. Ước của các số dương trong mảng: ")
 for (let number of arr) {
     if (number <= 0) continue;
     let String = "";
-    for (let i = 1; i < number; i++) {
+    for (let i = 1; i <= number; i++) {
         if (number % i == 0) String += i + " ";
     }
     console.log(`\t ${number} : ${String}`);
@@ -61,10 +61,10 @@ for (let number of arr) {
     if (number <= 0) continue;
     let count = 0;
 
-    for (let i = 1; i < number; i++) {
+    for (let i = 1; i <= number; i++) {
         if (number % i == 0) count++;
     }
-    if (count == 1) {
+    if (count == 2) {
         flag = true;
         break;
     };
