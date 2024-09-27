@@ -1,12 +1,12 @@
 let arr = [-15, -7, 0, 5, 12, 23, -34, 46, -50, 78,
 -99, 18, -29, 37, 54, 66, -45, 82, 91, -10
 ];
-let count = 0;
+let flag = false;
 for (let number of arr) {
     if (number < 0) {
-        console.log("Mảng tồn tại số âm");
+        flag = true;
         break;
     }
-    count++;
 }
-if (count == arr.length) console.log("Mảng không tồn tại số âm");
+if (!flag) console.log("Mảng không tồn tại số âm");
+else console.log("Mảng tồn tại số âm");
