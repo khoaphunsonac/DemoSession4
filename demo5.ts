@@ -1,6 +1,14 @@
-let arr = [-15, -7, 0, 5, 12, 23, -34, 46, -50, 78,
-    -99, 18, -29, 37, 54, 66, -45, 82, 91, -10    
+let arr = [5, 12, 7, 5, 19, 3, 12, 8, 15, 10,
+    21, 5, 30, 8, 12, 19, 25, 30, 5, 7,
+    14, 17, 22, 8, 10, 15, 6, 8, 19, 30,
+    11, 17, 5, 14, 22, 33, 5, 4, 10, 9,
+    18, 12, 20, 25, 22, 17, 5, 6, 7, 19,
+    30, 33, 25, 5, 15, 12, 10, 8, 19, 24,
+    33, 2, 3, 5, 7, 8, 9, 10, 11, 12,
+    15, 19, 21, 22, 25, 30, 5, 5, 6, 6,
+    7, 8, 9, 10, 11, 12, 12, 12, 12, 12        
 ];
+
 //1. Tính giá trị trung bình dương của mảng
 let sum = 0;
 let count = 0;
@@ -52,6 +60,7 @@ let flag = false;
 for (let number of arr) {
     if (number <= 0) continue;
     let count = 0;
+
     for (let i = 1; i < number; i++) {
         if (number % i == 0) count++;
     }
@@ -63,11 +72,11 @@ for (let number of arr) {
 if(flag) console.log("5. Mảng tồn tại số nguyên tố");
 else console.log("5. Mảng không tồn tại số nguyên tố");
 //6. Dem so lan xuat hien cua bien x trong mang 
-let a = arr[7];
+let x = arr[7];
 count = 0;
 for (let number of arr) {
-    if (number == a) count++;
+    if (number == x) count++;
 }
-console.log(`6. Phần tử ${a} xuất hiện ${count} lần `);
+console.log(`6. Phần tử ${x} xuất hiện ${count} lần `);
 
 
