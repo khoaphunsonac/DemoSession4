@@ -79,4 +79,4 @@ for (let number of arr) {
 }
 console.log(`6. Phần tử ${x} xuất hiện ${count} lần `);
 
-
+//7 . In ra console.log("abcdef")
